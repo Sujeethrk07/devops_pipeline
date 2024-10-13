@@ -3,7 +3,6 @@ A Pipleline code from a Jenkins.
 
 pipeline {
     agent any
-
     stages {
         stage('Checkout') {
             steps {
@@ -13,8 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 git branch: 'main', credentialsId: '59415612', url: 'https://github.com/Sujeethrk07/devops_pipeline.git'
-                bat 'python sout.py'
-                
+                bat 'python sout.py'   
             }
         }
         stage('Test') {
