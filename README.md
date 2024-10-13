@@ -3,6 +3,7 @@ A Pipleline code from a Jenkins.
 
 pipeline {
     agent any
+    
     stages {
         stage('Checkout') {
             steps {
